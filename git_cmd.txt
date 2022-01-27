@@ -1,0 +1,37 @@
+1. git을 하고 싶은  폴더에서 마우스 우클릭 하여 'git bash here' 클릭하면  git cmd 창이 나옴
+
+2. git init
+    - git 로컬저장소 생성 됨..  폴더에 '.git' 숨김폴더가 생성됨
+
+3. git config --global user.email "사용자 이메일"
+   git config --global user.name "git 사용자명"
+
+4. git add 파일명(readme.txt)
+   - git 하고 싶은 파일명
+
+5. git commit -m "설명문"
+   - 수정하고 나면 작업내용을 기록 하는 명령어 , '-m' 메세지
+
+    파일을 수정하고 나면,  4~5번 실행하여 버전관리
+
+6. git log 
+   - 버전관리 내용
+
+7. git checkout 커밋아이디앞6자리
+   - 되돌리고 싶은 버전의 commit 아이디에서 앞 6자리 입력하면  가고싶은 버전으로 이동 함
+
+8. git checkout - 
+   - 가장최신 버전으로 이동
+
+9. git remote add origin 나의깃주소(https://GitHub.com/사용자명/깃폴더명)
+   - 원격저장소(온라인상) 연결
+
+10. git push origin master
+   - 원격저장소에 자료 올림, 웹접속후 저장소 확인하면 자료들이 올라와 있는게 보임
+
+11. git clone 나의깃주소 .
+    - 원격저장소의 자료들을 내려받음, '.' 현재 위치 내려받음
+
+12. git pull origin master
+    - 원격저장소에 새로운 커밋이 있다면 그걸 내 로컬저장소에 받아오라는 명령어
+      여러 작업장소에서 작업시 사용
